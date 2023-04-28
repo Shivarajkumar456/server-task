@@ -1,9 +1,14 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('My name is Shivarajkumar');
-  console.log('My name is Shivarajkumar');
+  res.setHeader('Content-Type', 'text/html');
+  res.write('<html>');
+  res.write('<head><title>First NodeJs Page</title></head>');
+  res.write('<body><h1>Hello World!</h1></body>');
+  res.write('</html>')
+  res.end();
+
+
 });
 
 server.listen(4000, () => {
