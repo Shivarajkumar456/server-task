@@ -56,4 +56,4 @@ const reqHandler = (req, res) => {
 // module.exports.message = 'Dummy message';
 
 exports.handler = reqHandler;
-exports.message = 'Dummy message';
+exports.message = 'Dummy message for nodemon';
